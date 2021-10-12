@@ -1,0 +1,25 @@
+.footer-section {
+    height: 200px;
+    background-color: #1c2237;   
+}
+
+.footer-img {
+    padding-right: 19vh;
+    padding-left: 17vh;
+  }
+
+  .img_finn {
+    width: 100px;
+    border-radius: 20px;
+    padding-right: 30%;
+  }
+
+  .me-text {
+      color:white;
+      font-weight: 700;
+      font-size: 30px;
+  }
+
+  .footer-container {
+      padding-left: 40%;
+  }

@@ -1,0 +1,22 @@
+.roadmap-section {
+    height: 100vh;
+    background-color: rgb(231, 245, 253);
+}
+
+@media only screen and (max-width: 1700px) {
+    .vertical-timeline-element-date {
+      display: block !important;
+      float: none !important;
+      color: rgb(44, 44, 44);
+      margin-top: 1.5em;
+    }
+  }
+  
+.roadmap_title {
+    padding-left: 45%;
+}
+
+  .h1 {
+    font-weight: 700;
+    font-size: 50px;
+  }
