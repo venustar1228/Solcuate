@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState, useEffect} from 'react'
 import { Link as LinkS } from 'react-scroll';
 import { Link as Rlink } from 'react-router-dom'
 import './Navbar.css'
@@ -7,9 +7,20 @@ import Home from '../Home';
 
 
 function Navbar() {
+    const [navbar, setNavbar] = useState(false)
+
+    const changeBakground = () => {
+        if (window.scrollY >= 80) {
+            setNavbar(true)
+        } else {
+            setNavbar(false)
+        }
+    }
+
+    window.addEventListener('scroll', changeBakground);
     return (
         <>
-            <div className="navbar">
+            <div className={navbar ? 'navbar active' : 'navbar'}>
                 <div className="navbar-container container">
                     <Rlink to='/' className='nav-links'>
                         SOLCUATE
@@ -23,7 +34,7 @@ function Navbar() {
                                 smooth={true}
                                 offset={0}
                                 duration={500}>
-                                Home
+                                <text>Home</text>
                             </LinkS>
                         </li>
                         <li className="nav-item">
