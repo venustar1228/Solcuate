@@ -5,7 +5,7 @@ let Data = [
       description:
         "Website, Twitter and Discord server launches",
       date: "1st October 2021",
-      icon: "work",
+      icon: "logo",
     },
     {
       id: 2,

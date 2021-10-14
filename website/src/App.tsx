@@ -5,8 +5,10 @@ import { useMemo } from "react";
 import Home from "./Home";
 import Intro from "./Home/Intro";
 import Roadmap from "./Roadmap/Roadmap";
-import './Home/Intro.css';
+import Rarity from "./Rarity/Rarity";
 
+import './Home/Intro.css';
+import bg from './bg.jpeg'
 
 import Navbar from "./Navbar/Navbar";
 import { BrowserRouter as Router } from 'react-router-dom'
@@ -94,7 +96,7 @@ function App() {
   return (
     <Router>
       <Navbar />
-      <div className="home_section" id="intro">
+      <div className="home_section" id="intro" style={{ backgroundImage: `url(${bg})` }}>
         <div className="home_grid">
           <div className="home_intro">
             <div className="home_header">
@@ -128,6 +130,7 @@ function App() {
           </div>
         </div>
       </div>
+      <Rarity />
       <Roadmap />
       <Footer />
     </Router >

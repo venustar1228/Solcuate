@@ -1,7 +1,6 @@
 .home_section {
     height: 70vh;
-    background-color: #eff9fd;    
-    font-family: Inter, sans-serif;
+    font-family: Inter, sans-serif;    
 }
 
 .home_grid {
@@ -9,7 +8,7 @@
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
-    padding-top: 11vh;
+    padding-top: 21vh;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
     -webkit-flex-direction: row;
@@ -46,13 +45,15 @@
   }
 
   .home_image {
+    padding-top: 1%;
     padding-right: 19vh;
     padding-left: 17vh;
   }
 
   .img_cat {
-    width: 400px;
+    width: 300px;
     border-radius: 20px;
+    border:1px solid #b8d9ec;
   }
 
   .home_header {

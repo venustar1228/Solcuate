@@ -1,4 +1,4 @@
-import React, { useState, useEffect} from 'react'
+import React, { useState, useEffect } from 'react'
 import { Link as LinkS } from 'react-scroll';
 import { Link as Rlink } from 'react-router-dom'
 import './Navbar.css'
@@ -22,9 +22,12 @@ function Navbar() {
         <>
             <div className={navbar ? 'navbar active' : 'navbar'}>
                 <div className="navbar-container container">
-                    <Rlink to='/' className='nav-links'>
-                        SOLCUATE
-                    </Rlink>
+                    <div className='logo'>
+                        <Rlink to='/' className='nav-links'>
+                            <img src="images/logo.png" alt='logo' className='img_logo' />
+                            <text className="solcuate">SOLCUATE</text>
+                        </Rlink>
+                    </div>
                     <ul className='nav-menu'>
                         <li className="nav-item">
                             <LinkS className='nav-links'
@@ -35,6 +38,17 @@ function Navbar() {
                                 offset={0}
                                 duration={500}>
                                 <text>Home</text>
+                            </LinkS>
+                        </li>
+                        <li className="nav-item">
+                            <LinkS className='nav-links'
+                                activeClass="active"
+                                to="rarity"
+                                spy={true}
+                                smooth={true}
+                                offset={0}
+                                duration={500}>
+                                Rarity
                             </LinkS>
                         </li>
                         <li className="nav-item">

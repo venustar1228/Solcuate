@@ -1,7 +1,9 @@
 .roadmap-section {
-    height: 100vh;
-    background-color: rgb(231, 245, 253);
+    height: 70vh;
+    background-color:#f5f3c6;
+    background-image: url(./bg2.jpeg);
 }
+
 
 @media only screen and (max-width: 1700px) {
     .vertical-timeline-element-date {
@@ -9,7 +11,7 @@
       float: none !important;
       color: rgb(44, 44, 44);
       margin-top: 1.5em;
-    }
+    } 
   }
   
 .roadmap_title {
@@ -19,4 +21,20 @@
   .h1 {
     font-weight: 700;
     font-size: 50px;
+  }
+
+  .test {
+    background:transparent;
+  }
+
+  .time-icon {
+    border-radius: 50%;
+    height: 100%;
+    width: 100%;
+  }
+
+  .date {
+    color:yellow;
+    font-weight:700;
+    font-size: 200px;
   }
